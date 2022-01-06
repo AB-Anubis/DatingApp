@@ -6,13 +6,13 @@
       <ul class="navbar-nav mr-auto" >
         <<ng-container *ngIf="accountService.currentUser$ | async">
           <li class="nav-item">
-            <a class="nav-link" routerLinkActive='/members'>Matches</a>
+            <a class="nav-link" routerLink='/members' routerLinkActive='active'>Matches</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLinkActive='/lists'>Lists</a>
+            <a class="nav-link" routerLink='/lists' routerLinkActive='active'>Lists</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLinkActive='/messages'>Messages</a>
+            <a class="nav-link" routerLink='/messages' routerLinkActive='active'>Messages</a>
           </li>
         </ng-container>
       </ul>
